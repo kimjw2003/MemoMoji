@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        memoDb = MemoDb.getInstance(this)
+        memoDb = MemoDb.getInstance(this)// Db에 접근을 가능하게 해줌
         memoAdapter = RcViewAdapter(this, memoList)
 
         val r = Runnable {

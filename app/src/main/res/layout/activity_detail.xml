@@ -15,10 +15,9 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.214" />
+        app:layout_constraintVertical_bias="0.21" />
 
     <TextView
         android:id="@+id/watch_edit_title"
@@ -62,28 +61,27 @@
         android:layout_height="247dp"
         android:layout_margin="20dp"
         android:layout_marginBottom="36dp"
+        android:background="@drawable/border"
         android:gravity="top"
         android:padding="5dp"
-        android:background="@drawable/border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/watch_title"
-        app:layout_constraintVertical_bias="0.785" />
+        app:layout_constraintVertical_bias="0.736" />
 
     <Button
         android:id="@+id/Del_button"
-        android:layout_width="119dp"
-        android:layout_height="54dp"
-        android:background="@color/colorPrimary"
-        android:text="Delete"
+        android:layout_width="62dp"
+        android:layout_height="58dp"
+        android:background="@android:drawable/ic_menu_delete"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/watch_title"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintHorizontal_bias="0.982"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.474" />
+        app:layout_constraintVertical_bias="0.077" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
