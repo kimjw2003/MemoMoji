@@ -7,7 +7,7 @@ import android.os.Handler
 
 class IntroActivity : AppCompatActivity() {
 
-    private val INTRO_TIME_OUT:Long = 800
+    private val INTRO_TIME_OUT:Long = 1000
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intro)
