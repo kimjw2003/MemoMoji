@@ -3,6 +3,7 @@ package com.example.kimmemo
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_detail.*
 import java.util.Calendar.getInstance
@@ -17,6 +18,8 @@ class DetailActivity : AppCompatActivity() {
 
         val contents = intent.getStringExtra("content")
         val title = intent.getStringExtra("title")
+
+        watch_edit_content.setMovementMethod(ScrollingMovementMethod()) //텍스트뷰 내에서 스크롤가능하게 해줌
 
         watch_edit_title.text = title
         watch_edit_content.text = contents
