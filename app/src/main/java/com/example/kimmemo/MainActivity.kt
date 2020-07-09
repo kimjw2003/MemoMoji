@@ -1,9 +1,12 @@
 package com.example.kimmemo
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
+import androidx.core.app.ActivityCompat.finishAffinity
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.Exception
@@ -12,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     private var memoDb : MemoDb? = null
     private var memoList = listOf<Memo>()
     lateinit var memoAdapter: RcViewAdapter
+    var mBackWait:Long = 0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -52,5 +56,16 @@ class MainActivity : AppCompatActivity() {
         MemoDb.destroyInstance()
         memoDb = null
         super.onDestroy()
+    }
+    override fun onBackPressed() {
+        // 뒤로가기 버튼 클릭
+        if(System.currentTimeMillis() - mBackWait >=1500 ) {
+            mBackWait = System.currentTimeMillis()
+            Toast.makeText(this,"한번 더 누르면 종료됩니다.", Toast.LENGTH_LONG).show()
+        } else {
+            moveTaskToBack(true) //finish후 다른 액티비티가 보여지는것을 방지
+            finish() //액티비티 종료
+            android.os.Process.killProcess(android.os.Process.myPid()) //앱, 프로세스까지 강제종료
+        }
     }
 }
