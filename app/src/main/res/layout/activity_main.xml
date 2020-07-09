@@ -10,12 +10,14 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MEMO"
-        android:textSize="30dp"
-        android:textColor="@color/colorPrimaryDark"
         android:padding="10dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/black_line"/>
+        android:text="MEMO"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@id/black_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/black_line"

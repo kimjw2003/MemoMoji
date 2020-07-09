@@ -17,20 +17,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.21" />
+        app:layout_constraintVertical_bias="0.149" />
 
     <TextView
         android:id="@+id/watch_edit_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:background="@drawable/border"
         android:padding="5dp"
         android:visibility="visible"
-        android:background="@drawable/border"
-        app:layout_constraintBottom_toTopOf="@id/watch_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/watch_title" />
+        app:layout_constraintTop_toBottomOf="@+id/watch_title"
+        app:layout_constraintVertical_bias="0.075" />
 
     <EditText
         android:id="@+id/edit_title"
@@ -53,12 +55,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/watch_edit_title" />
+        app:layout_constraintTop_toBottomOf="@id/watch_edit_title"
+        app:layout_constraintVertical_bias="0.509" />
 
     <TextView
         android:id="@+id/watch_edit_content"
-        android:layout_width="385dp"
-        android:layout_height="247dp"
+        android:layout_width="382dp"
+        android:layout_height="360dp"
         android:layout_margin="20dp"
         android:layout_marginBottom="36dp"
         android:background="@drawable/border"
