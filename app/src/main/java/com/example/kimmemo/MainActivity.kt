@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         // 뒤로가기 버튼 클릭
         if(System.currentTimeMillis() - mBackWait >=1500 ) {
             mBackWait = System.currentTimeMillis()
-            Toast.makeText(this,"한번 더 누르면 종료됩니다.", Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"한번 더 누르면 종료됩니다.", Toast.LENGTH_LONG).show() //토스트 출력
         } else {
             moveTaskToBack(true) //finish후 다른 액티비티가 보여지는것을 방지
             finish() //액티비티 종료
