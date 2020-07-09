@@ -28,11 +28,9 @@ class DetailActivity : AppCompatActivity() {
             memoDb?.MemoDao()?.delete(title+"", contents+"") //OnClickListener에서 delRunnable쓰레드로 이동
         }
 
-        Del_button.setOnClickListener{
-            Log.d("TAG", "title : $title")
-            Log.d("TAG", "contents :$contents")
-            Thread(delRunnable).start() // 쓰레드 시작
-            var intent = Intent(this, MainActivity::class.java)
+        Del_button.setOnClickListener{//Delete버튼 클릭시
+            Thread(delRunnable).start() // delRunnable쓰레드 시작
+            var intent = Intent(this, MainActivity::class.java) //삭제 후 메인으로 이동
             startActivity(intent)
             finish()
         }
