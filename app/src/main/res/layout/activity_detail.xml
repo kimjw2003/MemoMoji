@@ -80,6 +80,7 @@
         android:layout_width="62dp"
         android:layout_height="58dp"
         android:background="@android:drawable/ic_menu_delete"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/watch_title"
         app:layout_constraintEnd_toEndOf="parent"

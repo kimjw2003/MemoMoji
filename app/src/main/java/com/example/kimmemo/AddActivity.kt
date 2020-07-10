@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_add.*
+import kotlinx.android.synthetic.main.activity_add.edit_title
+import kotlinx.android.synthetic.main.activity_detail.*
 
 class AddActivity : AppCompatActivity() {
     private var memoDB : MemoDb? = null
@@ -28,6 +30,10 @@ class AddActivity : AppCompatActivity() {
             val i = Intent(this, MainActivity::class.java)
             startActivity(i)
             finish()
+
+            if(edit_title.text.isNullOrBlank()){
+                watch_edit_title.setText("No Title")
+            }
         }
     }
 
