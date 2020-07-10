@@ -30,10 +30,6 @@ class AddActivity : AppCompatActivity() {
             val i = Intent(this, MainActivity::class.java)
             startActivity(i)
             finish()
-
-            if(edit_title.text.isNullOrBlank()){
-                watch_edit_title.setText("No Title")
-            }
         }
     }
 
