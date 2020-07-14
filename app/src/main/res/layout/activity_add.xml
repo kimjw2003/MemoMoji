@@ -38,7 +38,7 @@
                 android:layout_height="39dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="20dp"
-                android:text="※ 수정이 불가하니 신중히 써주시기 바랍니다"
+                android:text="※ 수정이 불가하니 신중히 작성해 주시기 바랍니다"
                 android:textColor="@color/colorPrimaryDark"
                 app:layout_constraintBottom_toTopOf="@+id/text_title"
                 app:layout_constraintEnd_toEndOf="parent"
