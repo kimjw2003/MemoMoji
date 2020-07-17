@@ -49,7 +49,7 @@
                 android:id="@+id/add_text_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="704dp"
+                android:layout_marginTop="680dp"
                 android:background="@color/colorPrimaryDark"
                 android:text="ADD"
                 android:textColor="#FCFCFC"
