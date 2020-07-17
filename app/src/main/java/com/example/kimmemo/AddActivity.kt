@@ -16,7 +16,6 @@ class AddActivity : AppCompatActivity() {
 
         memoDB = MemoDb.getInstance(this)
 
-
         
         val addRunnable = Runnable {
             val newMemo = Memo()
