@@ -25,8 +25,11 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/colorPrimaryDark"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        app:layout_constraintBottom_toTopOf="@+id/rcView"/>
+        app:layout_constraintBottom_toTopOf="@+id/rcView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
     <TextView
         android:id="@+id/watch_title"
         android:layout_width="wrap_content"
@@ -37,8 +40,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.149" />
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.059" />
 
     <TextView
         android:id="@+id/watch_edit_title"
@@ -72,12 +75,12 @@
         android:text="CONTENT"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@id/watch_edit_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/watch_edit_title"
-        app:layout_constraintVertical_bias="0.509" />
+        app:layout_constraintVertical_bias="0.088" />
 
     <TextView
         android:id="@+id/watch_edit_content"
@@ -91,10 +94,9 @@
         android:scrollbars="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/watch_title"
-        app:layout_constraintVertical_bias="0.736" />
+        app:layout_constraintTop_toBottomOf="@+id/watch_content"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/Del_button"
@@ -103,11 +105,11 @@
         android:background="@android:drawable/ic_menu_delete"
         android:backgroundTint="@color/colorPrimaryDark"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/watch_title"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintHorizontal_bias="0.959"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.085" />
+        app:layout_constraintVertical_bias="0.005" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

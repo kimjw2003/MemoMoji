@@ -15,7 +15,7 @@ class AddActivity : AppCompatActivity() {
         setContentView(R.layout.activity_add)
 
         memoDB = MemoDb.getInstance(this)
-        
+
         val addRunnable = Runnable {
             val newMemo = Memo()
             newMemo.title = edit_title.text.toString()
