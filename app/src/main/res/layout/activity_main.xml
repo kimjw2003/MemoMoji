@@ -39,7 +39,7 @@
 
     <Button
         android:id="@+id/write_text_btn"
-        android:layout_width="56dp"
+        android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_margin="5dp"
         android:background="@android:drawable/ic_menu_edit"
