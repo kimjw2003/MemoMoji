@@ -16,6 +16,7 @@ import kotlinx.android.synthetic.main.activity_detail.*
 import java.util.Calendar.getInstance
 
 class DetailActivity : AppCompatActivity() {
+    //전역변수로 선언
     var memoDb : MemoDb? = null
     var contents : String? = null
     var title : String? = null
@@ -24,9 +25,7 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
-
         memoDb = MemoDb.getInstance(this)
-
         contents = intent.getStringExtra("content")
         title = intent.getStringExtra("title")
 
@@ -38,11 +37,10 @@ class DetailActivity : AppCompatActivity() {
 
 
         Del_button.setOnClickListener{//Delete버튼 클릭시
-
-            showDialog()
+            showDialog() //showDialog함수 실행
         }
-        copy_Button.setOnClickListener{
-            clipBoard()
+        copy_Button.setOnClickListener{//copy버튼 클릭시
+            clipBoard()//clipBoard함수실행
         }
     }
     fun clipBoard(){
@@ -63,7 +61,7 @@ class DetailActivity : AppCompatActivity() {
         val alertDialog = AlertDialog.Builder(this)
             .setTitle("삭제")
             .setMessage("정말 삭제하시겠습니까? \n"+"한번 삭제하면 복구 할 수 없습니다")
-            .setPositiveButton("삭제"){dialog, which->
+            .setPositiveButton("삭제"){dialog, which-> //다이얼로그창에서 삭제버튼을 눌렀을 시 행동
                 Thread(delRunnable).start() // delRunnable쓰레드 시작
                 var intent = Intent(this, MainActivity::class.java) //삭제 후 메인으로 이동
                 startActivity(intent)
