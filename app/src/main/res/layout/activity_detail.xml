@@ -122,7 +122,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/copy_Button"
                 android:layout_width="83dp"
                 android:layout_height="38dp"
                 android:background="#FFFFFF"

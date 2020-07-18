@@ -7,18 +7,17 @@
     tools:context=".AddActivity">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/text_content"
@@ -31,30 +30,33 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.802" />
+                app:layout_constraintVertical_bias="0.85" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="292dp"
                 android:layout_height="39dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp"
                 android:text="※ 수정이 불가하니 신중히 써주시기 바랍니다"
                 android:textColor="@color/colorPrimaryDark"
                 app:layout_constraintBottom_toTopOf="@+id/text_title"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.372" />
+                app:layout_constraintVertical_bias="0.60" />
 
             <Button
                 android:id="@+id/add_text_btn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="680dp"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
                 android:background="@color/colorPrimaryDark"
                 android:text="ADD"
                 android:textColor="#FCFCFC"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.9"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.0" />
@@ -70,9 +72,10 @@
                 android:padding="5dp"
                 app:layout_constraintBottom_toTopOf="@+id/add_text_btn"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.861" />
+                app:layout_constraintVertical_bias="0.65" />
 
             <EditText
                 android:id="@+id/edit_title"
@@ -87,7 +90,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.815" />
+                app:layout_constraintVertical_bias="0.77" />
 
             <TextView
                 android:id="@+id/text_title"
@@ -101,7 +104,8 @@
                 app:layout_constraintHorizontal_bias="0.501"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.759" />
+                app:layout_constraintVertical_bias="0.80" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

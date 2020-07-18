@@ -1,10 +1,14 @@
 package com.example.kimmemo
 
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_detail.*
 import java.util.Calendar.getInstance
 
@@ -34,5 +38,16 @@ class DetailActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        copy_Button.setOnClickListener{
+            clipBoard()
+        }
+    }
+    fun clipBoard(){
+
+        val clipboardManager = getSystemService(Context.CLIPBOARD_SERVICE)as ClipboardManager
+        val clipData = ClipData.newPlainText("label", watch_edit_content.text.toString())
+        clipboardManager!!.setPrimaryClip(clipData)
+
+        Toast.makeText(this, "클립보드에 복사되었습니다", Toast.LENGTH_SHORT).show()
     }
 }
