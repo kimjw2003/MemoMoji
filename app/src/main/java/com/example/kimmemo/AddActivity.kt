@@ -3,6 +3,8 @@ package com.example.kimmemo
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_add.*
 import kotlinx.android.synthetic.main.activity_add.edit_title
 import kotlinx.android.synthetic.main.activity_detail.*
@@ -24,17 +26,31 @@ class AddActivity : AppCompatActivity() {
         }
 
         add_text_btn.setOnClickListener {
-            val addThread = Thread(addRunnable)
-            addThread.start()
 
-            val i = Intent(this, MainActivity::class.java)
-            startActivity(i)
-            finish()
+            if(edit_title.text.isNullOrBlank()){
+                showDialog()
+            }
+            else {
+                val addThread = Thread(addRunnable)
+                addThread.start()
+                val i = Intent(this, MainActivity::class.java)
+                startActivity(i)
+                finish()
+            }
         }
     }
 
     override fun onDestroy() {
         MemoDb.destroyInstance()
         super.onDestroy()
+    }
+    private fun showDialog(){
+        val alertDialog = AlertDialog.Builder(this)
+            .setTitle("경고")
+            .setMessage("제목이 입력되지 않았습니다!")
+            .setPositiveButton("확인", null)
+            .create()
+
+        alertDialog.show()
     }
 }
