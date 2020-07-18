@@ -61,7 +61,8 @@ class DetailActivity : AppCompatActivity() {
         }
 
         val alertDialog = AlertDialog.Builder(this)
-            .setTitle("정말로 삭제하시겠습니까?")
+            .setTitle("삭제")
+            .setMessage("정말 삭제하시겠습니까? \n"+"한번 삭제하면 복구 할 수 없습니다")
             .setPositiveButton("삭제"){dialog, which->
                 Thread(delRunnable).start() // delRunnable쓰레드 시작
                 var intent = Intent(this, MainActivity::class.java) //삭제 후 메인으로 이동
