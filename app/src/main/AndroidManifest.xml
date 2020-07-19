@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.kimmemo">
+    package="com.example.memoMoji">
 
     <application
         android:allowBackup="true"
@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
-        <activity android:name=".DetailActivity" />
-        <activity android:name=".AddActivity"/>
-        <activity android:name=".IntroActivity">
+        <activity android:name="com.example.memoMoji.MainActivity" />
+        <activity android:name="com.example.memoMoji.DetailActivity" />
+        <activity android:name="com.example.memoMoji.AddActivity"/>
+        <activity android:name="com.example.memoMoji.IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

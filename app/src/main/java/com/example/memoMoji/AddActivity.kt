@@ -1,13 +1,11 @@
-package com.example.kimmemo
+package com.example.memoMoji
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_add.*
 import kotlinx.android.synthetic.main.activity_add.edit_title
-import kotlinx.android.synthetic.main.activity_detail.*
 
 class AddActivity : AppCompatActivity() {
     private var memoDB : MemoDb? = null

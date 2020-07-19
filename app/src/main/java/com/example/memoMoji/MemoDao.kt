@@ -1,4 +1,4 @@
-package com.example.kimmemo
+package com.example.memoMoji
 
 import androidx.room.Dao
 import androidx.room.Insert

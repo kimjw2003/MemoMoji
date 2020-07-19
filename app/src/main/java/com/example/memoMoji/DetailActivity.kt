@@ -1,4 +1,4 @@
-package com.example.kimmemo
+package com.example.memoMoji
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -7,13 +7,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
-import android.util.Log
-import android.view.LayoutInflater
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_detail.*
-import java.util.Calendar.getInstance
 
 class DetailActivity : AppCompatActivity() {
     //전역변수로 선언

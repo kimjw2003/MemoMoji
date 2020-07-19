@@ -1,4 +1,4 @@
-package com.example.kimmemo
+package com.example.memoMoji
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

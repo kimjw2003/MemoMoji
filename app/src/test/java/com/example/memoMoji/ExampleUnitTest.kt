@@ -1,4 +1,4 @@
-package com.example.kimmemo
+package com.example.memoMoji
 
 import org.junit.Test
 
