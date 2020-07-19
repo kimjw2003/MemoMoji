@@ -14,8 +14,8 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
     private var memoDb : MemoDb? = null
     private var memoList = listOf<Memo>()
-    lateinit var memoAdapter: RcViewAdapter
-    var mBackWait:Long = 0
+    private lateinit var memoAdapter: RcViewAdapter
+    private var mBackWait:Long = 0
 
     val currentDateTime = Calendar.getInstance().time
     var dateFormat = SimpleDateFormat("yyyy.MM.dd", Locale.KOREA).format(currentDateTime)
