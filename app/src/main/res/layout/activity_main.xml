@@ -47,7 +47,7 @@
         android:background="@android:drawable/ic_menu_edit"
         android:backgroundTint="@color/colorPrimaryDark"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
