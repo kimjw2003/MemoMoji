@@ -13,8 +13,8 @@ import kotlinx.android.synthetic.main.activity_detail.*
 
 class DetailActivity : AppCompatActivity() {
     //전역변수로 선언
-    var memoDb : MemoDb? = null
-    var contents : String? = null
+    private var memoDb : MemoDb? = null
+    private var contents : String? = null
     var title : String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
