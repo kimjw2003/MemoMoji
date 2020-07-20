@@ -7,9 +7,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_detail.*
+import kotlinx.android.synthetic.main.item_memo.*
 
 class DetailActivity : AppCompatActivity() {
     //전역변수로 선언
@@ -17,7 +19,7 @@ class DetailActivity : AppCompatActivity() {
     private var contents : String? = null
     var title : String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
@@ -29,7 +31,6 @@ class DetailActivity : AppCompatActivity() {
 
         watch_edit_title.text = title
         watch_edit_content.text = contents
-
 
         Del_button.setOnClickListener{//Delete버튼 클릭시
             showDialog() //showDialog함수 실행

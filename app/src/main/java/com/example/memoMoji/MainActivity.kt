@@ -17,8 +17,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var memoAdapter: RcViewAdapter
     private var mBackWait:Long = 0
 
-    val currentDateTime = Calendar.getInstance().time
-    var dateFormat = SimpleDateFormat("yyyy.MM.dd", Locale.KOREA).format(currentDateTime)
+    private val currentDateTime = Calendar.getInstance().time
+    private var dateFormat = SimpleDateFormat("yyyy.MM.dd", Locale.KOREA).format(currentDateTime)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
