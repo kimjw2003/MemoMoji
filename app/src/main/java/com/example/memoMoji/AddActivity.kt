@@ -37,7 +37,6 @@ class AddActivity : AppCompatActivity() {
             }
         }
     }
-
     override fun onDestroy() {
         MemoDb.destroyInstance()
         super.onDestroy()

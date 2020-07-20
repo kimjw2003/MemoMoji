@@ -31,7 +31,6 @@ class DetailActivity : AppCompatActivity() {
         watch_edit_content.text = contents
 
 
-
         Del_button.setOnClickListener{//Delete버튼 클릭시
             showDialog() //showDialog함수 실행
         }
@@ -48,7 +47,6 @@ class DetailActivity : AppCompatActivity() {
         Toast.makeText(this, "클립보드에 복사되었습니다", Toast.LENGTH_SHORT).show()
     }
     private fun showDialog() {
-
 
         val delRunnable = Runnable { // delRunnable 쓰레드 제작
             memoDb?.MemoDao()?.delete(title+"", contents+"") //OnClickListener에서 delRunnable쓰레드로 이동

@@ -20,13 +20,11 @@ class MainActivity : AppCompatActivity() {
     val currentDateTime = Calendar.getInstance().time
     var dateFormat = SimpleDateFormat("yyyy.MM.dd", Locale.KOREA).format(currentDateTime)
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         timeView.text = dateFormat
-
 
         memoDb = MemoDb.getInstance(this)// Db에 접근을 가능하게 해줌
         memoAdapter = RcViewAdapter(this, memoList)
@@ -55,7 +53,6 @@ class MainActivity : AppCompatActivity() {
         write_text_btn.setOnClickListener{
             val intent = Intent(this, AddActivity::class.java)
             startActivity(intent)
-
         }
     }
     override fun onDestroy(){
