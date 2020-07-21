@@ -35,7 +35,6 @@
         android:layout_width="match_parent"
         android:layout_height="570dp"
         android:layout_margin="20dp"
-        android:layout_marginTop="80dp"
         app:layout_constraintTop_toBottomOf="@+id/black_line"
         tools:layout_editor_absoluteX="20dp" />
 
@@ -55,60 +54,20 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/buyBtn"
-        android:layout_gravity="end|bottom"
-        android:layout_marginBottom="130dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginEnd="24dp"
-        app:borderWidth="0dp"
-        app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.951"
-        app:layout_constraintStart_toStartOf="parent"
-        android:elevation="6dp"
-        app:pressedTranslationZ="12dp"
-        android:visibility="invisible"
-        android:src="@drawable/warning"
-        tools:ignore="MissingConstraints" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/sellBtn"
-        android:layout_gravity="end|bottom"
-        android:layout_marginBottom="80dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginEnd="24dp"
-        app:borderWidth="0dp"
-        app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.951"
-        app:layout_constraintStart_toStartOf="parent"
-        android:elevation="6dp"
-        app:pressedTranslationZ="12dp"
-        android:visibility="invisible"
-        android:src="@drawable/warning"
-        tools:ignore="MissingConstraints" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
-        android:layout_marginBottom="36dp"
-        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorPrimary"
         android:elevation="6dp"
         android:src="@android:drawable/ic_menu_edit"
         app:borderWidth="0dp"
         app:fabSize="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:pressedTranslationZ="12dp"
         tools:ignore="MissingConstraints" />
