@@ -9,6 +9,7 @@ import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.item_memo.*
 import java.lang.Exception
 import java.text.SimpleDateFormat
 import java.util.*
@@ -57,6 +58,11 @@ class MainActivity : AppCompatActivity() {
         addBtn.setOnClickListener {
            var intent = Intent(this, AddActivity::class.java)
             startActivity(intent)
+        }
+        if(checkBox.isChecked){ //체크박스가 체크된 경우
+
+        }else{ // 아닌 경우
+
         }
     }
     override fun onDestroy() {
