@@ -5,12 +5,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import android.widget.CheckBox
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.item_memo.*
 import java.lang.Exception
 import java.text.SimpleDateFormat
 import java.util.*
@@ -60,7 +57,6 @@ class MainActivity : AppCompatActivity() {
            var intent = Intent(this, AddActivity::class.java)
             startActivity(intent)
         }
-
 
     }
     override fun onDestroy() {

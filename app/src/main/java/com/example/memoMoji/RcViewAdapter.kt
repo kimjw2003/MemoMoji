@@ -5,11 +5,8 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.CheckBox
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.item_memo.*
 
 class RcViewAdapter(val context: Context, val memos: List<Memo>) : RecyclerView.Adapter<RcViewAdapter.Holder>()
 {
@@ -28,7 +25,6 @@ class RcViewAdapter(val context: Context, val memos: List<Memo>) : RecyclerView.
         }
     }
 
-
     override fun getItemCount(): Int {
         return memos.size
     }
@@ -36,7 +32,6 @@ class RcViewAdapter(val context: Context, val memos: List<Memo>) : RecyclerView.
         val view = LayoutInflater.from(context).inflate(R.layout.item_memo, parent, false)
         return Holder(view)
     }
-
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder?.bind(memos[position])
     }
