@@ -41,5 +41,4 @@ class RcViewAdapter(val context: Context, val memos: List<Memo>) : RecyclerView.
         holder?.bind(memos[position])
     }
 
-
 }
