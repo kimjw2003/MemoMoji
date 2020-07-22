@@ -5,7 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.animation.AnimationUtils
+import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
@@ -59,10 +59,10 @@ class MainActivity : AppCompatActivity() {
            var intent = Intent(this, AddActivity::class.java)
             startActivity(intent)
         }
-        if(checkBox.isChecked){ //체크박스가 체크된 경우
-
+        if(ChBox.isChecked){ //체크박스가 체크된 경우
+            imageView2.visibility = View.VISIBLE
         }else{ // 아닌 경우
-
+            imageView2.visibility = View.INVISIBLE
         }
     }
     override fun onDestroy() {

@@ -36,7 +36,7 @@
         app:srcCompat="@drawable/memologo" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/ChBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Special"
