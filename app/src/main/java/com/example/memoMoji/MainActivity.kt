@@ -43,15 +43,14 @@ class MainActivity : AppCompatActivity() {
                     rcView.adapter = memoAdapter
                     rcView.layoutManager = LinearLayoutManager(this)
                     rcView.setHasFixedSize(true) // 아이템이 추가될때마다 사이즈 변형 여부
-                }
-            } catch (e: Exception) {
-                Log.d("tag", "Error - $e")
+            }
+            } catch (e: Exception) {  //try에서 문제가 발생하면 여기를 실행
+                Log.d("tag", "Error - $e") //try에서 문제가 발생하면 로그에 'Error - 에러난 곳'을 출력
             }
         }
-        Log.d("TAG", "실행")
-        val thread = Thread(r)
+        Log.d("TAG", "실행") //try에서 문제가 없을 시 로그에 '실행'을 찍는다
+        val thread = Thread(r) //try에서 문제가 없을 시 여기를 실행
         thread.start()
-
 
         addBtn.setOnClickListener {
            var intent = Intent(this, AddActivity::class.java)
