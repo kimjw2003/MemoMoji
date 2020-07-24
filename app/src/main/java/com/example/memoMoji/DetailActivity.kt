@@ -39,7 +39,7 @@ class DetailActivity : AppCompatActivity() {
             clipBoard()//clipBoard함수실행
         }
     }
-    fun clipBoard(){
+    private fun clipBoard(){
 
         val clipboardManager = getSystemService(Context.CLIPBOARD_SERVICE)as ClipboardManager
         val clipData = ClipData.newPlainText("label", watch_edit_content.text.toString())
@@ -62,7 +62,7 @@ class DetailActivity : AppCompatActivity() {
                 startActivity(intent)
                 finish()
             }
-            .setNeutralButton("취소", null)
+            .setNeutralButton("취소", null) //취소버튼 설정
             .create()
 
         alertDialog.show()
