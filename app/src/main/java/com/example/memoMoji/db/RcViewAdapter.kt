@@ -1,4 +1,4 @@
-package com.example.memoMoji
+package com.example.memoMoji.db
 
 import android.content.Context
 import android.content.Intent
@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.memoMoji.memoView.DetailActivity
+import com.example.memoMoji.R
 
 class RcViewAdapter(val context: Context, val memos: List<Memo>) : RecyclerView.Adapter<RcViewAdapter.Holder>()
 {

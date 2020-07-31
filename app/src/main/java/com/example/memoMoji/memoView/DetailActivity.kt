@@ -1,4 +1,4 @@
-package com.example.memoMoji
+package com.example.memoMoji.memoView
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -7,11 +7,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import com.example.memoMoji.R
+import com.example.memoMoji.db.MemoDb
 import kotlinx.android.synthetic.main.activity_detail.*
-import kotlinx.android.synthetic.main.item_memo.*
 
 class DetailActivity : AppCompatActivity() {
     //전역변수로 선언

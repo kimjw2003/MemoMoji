@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.memoMoji.MainActivity" />
-        <activity android:name="com.example.memoMoji.DetailActivity" />
-        <activity android:name="com.example.memoMoji.AddActivity"/>
-        <activity android:name="com.example.memoMoji.IntroActivity">
+        <activity android:name="com.example.memoMoji.memoView.MainActivity" />
+        <activity android:name="com.example.memoMoji.memoView.DetailActivity" />
+        <activity android:name="com.example.memoMoji.memoView.AddActivity"/>
+        <activity android:name="com.example.memoMoji.memoView.IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,4 +1,4 @@
-package com.example.memoMoji
+package com.example.memoMoji.db
 
 import androidx.room.Dao
 import androidx.room.Insert

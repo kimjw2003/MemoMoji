@@ -1,4 +1,4 @@
-package com.example.memoMoji
+package com.example.memoMoji.db
 
 import android.content.Context
 import androidx.room.Database

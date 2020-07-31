@@ -1,4 +1,4 @@
-package com.example.memoMoji
+package com.example.memoMoji.memoView
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -7,6 +7,10 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.memoMoji.R
+import com.example.memoMoji.db.Memo
+import com.example.memoMoji.db.MemoDb
+import com.example.memoMoji.db.RcViewAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.Exception
 import java.text.SimpleDateFormat
@@ -36,7 +40,8 @@ class MainActivity : AppCompatActivity() {
                 Log.d("TAG", "Hello")
 
                 memoList = memoDb?.MemoDao()?.getAll()!!
-                memoAdapter = RcViewAdapter(this, memoList)
+                memoAdapter =
+                    RcViewAdapter(this, memoList)
                 memoAdapter.notifyDataSetChanged()
 
                 runOnUiThread { // 일반 쓰레드 -> Main쓰레드가 처리하게 만듬

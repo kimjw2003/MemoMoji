@@ -1,4 +1,4 @@
-package com.example.memoMoji
+package com.example.memoMoji.db
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

@@ -1,9 +1,12 @@
-package com.example.memoMoji
+package com.example.memoMoji.memoView
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
+import com.example.memoMoji.R
+import com.example.memoMoji.db.Memo
+import com.example.memoMoji.db.MemoDb
 import kotlinx.android.synthetic.main.activity_add.*
 import kotlinx.android.synthetic.main.activity_add.edit_title
 
