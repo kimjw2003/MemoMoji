@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.memoMoji.memoView.DetailActivity
 import com.example.memoMoji.R
 
-class RcViewAdapter(val context: Context, val memos: List<Memo>) : RecyclerView.Adapter<RcViewAdapter.Holder>()
+class RcViewAdapter(private val context: Context, private val memos: List<Memo>) : RecyclerView.Adapter<RcViewAdapter.Holder>()
 {
 
     inner class Holder(itemView: View) : RecyclerView.ViewHolder(itemView) {
