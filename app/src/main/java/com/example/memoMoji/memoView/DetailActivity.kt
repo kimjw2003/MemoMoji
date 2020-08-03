@@ -32,7 +32,7 @@ class DetailActivity : AppCompatActivity() {
         watch_edit_title.text = title
         watch_edit_content.text = contents
 
-        Del_button.setOnClickListener{//Delete버튼 클릭시
+        delBtn.setOnClickListener{//Delete버튼 클릭시
             showDialog() //showDialog함수 실행
         }
         copy_Button.setOnClickListener{//copy버튼 클릭시

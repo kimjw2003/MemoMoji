@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         val thread = Thread(r) //try에서 문제가 없을 시 여기를 실행
         thread.start()
 
-        addBtn.setOnClickListener {
+        delBtn.setOnClickListener {
            var intent = Intent(this, AddActivity::class.java)
             startActivity(intent)
         }
