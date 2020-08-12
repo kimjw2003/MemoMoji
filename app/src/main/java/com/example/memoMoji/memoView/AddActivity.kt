@@ -40,10 +40,12 @@ class AddActivity : AppCompatActivity() {
             }
         }
     }
+    
     override fun onDestroy() {
         MemoDb.destroyInstance()
         super.onDestroy()
     }
+
     private fun showDialog(){
         val alertDialog = AlertDialog.Builder(this)
             .setTitle("경고")
