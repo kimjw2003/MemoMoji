@@ -14,6 +14,7 @@ import com.example.memoMoji.db.MemoDb
 import kotlinx.android.synthetic.main.activity_detail.*
 
 class DetailActivity : AppCompatActivity() {
+    
     //전역변수로 선언
     private var memoDb : MemoDb? = null
     private var contents : String? = null
@@ -38,7 +39,7 @@ class DetailActivity : AppCompatActivity() {
             clipBoard()//clipBoard함수실행
         }
     }
-    
+
     /*클립보드에 복사하는 함수*/
     private fun clipBoard(){
 
