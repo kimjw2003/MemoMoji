@@ -38,6 +38,7 @@ class DetailActivity : AppCompatActivity() {
             clipBoard()//clipBoard함수실행
         }
     }
+    
     /*클립보드에 복사하는 함수*/
     private fun clipBoard(){
 
@@ -47,7 +48,7 @@ class DetailActivity : AppCompatActivity() {
 
         Toast.makeText(this, "클립보드에 복사되었습니다", Toast.LENGTH_SHORT).show()
     }
-    
+
     /*다이얼로그창을 보여주는 함수*/
     private fun showDialog() {
 
