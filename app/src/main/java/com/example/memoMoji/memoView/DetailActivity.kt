@@ -28,7 +28,6 @@ class DetailActivity : AppCompatActivity() {
         title = intent.getStringExtra("title")
 
         watch_edit_content.setMovementMethod(ScrollingMovementMethod()) //텍스트뷰 내에서 스크롤가능하게 해줌
-
         watch_edit_title.text = title
         watch_edit_content.text = contents
 
