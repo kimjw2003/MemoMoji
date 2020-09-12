@@ -9,6 +9,7 @@ import com.example.memoMoji.R
 class IntroActivity : AppCompatActivity() {
 
     private val INTRO_TIME_OUT:Long = 1000
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intro)

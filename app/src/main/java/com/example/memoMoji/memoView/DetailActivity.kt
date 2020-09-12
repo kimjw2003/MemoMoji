@@ -14,7 +14,7 @@ import com.example.memoMoji.db.MemoDb
 import kotlinx.android.synthetic.main.activity_detail.*
 
 class DetailActivity : AppCompatActivity() {
-    
+
     //전역변수로 선언
     private var memoDb : MemoDb? = null
     private var contents : String? = null
