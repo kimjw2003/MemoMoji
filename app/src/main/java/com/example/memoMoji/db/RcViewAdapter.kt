@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.memoMoji.memoView.DetailActivity
 import com.example.memoMoji.R
 
-class RcViewAdapter(private val context: Context, private val memos: List<Memo>) : RecyclerView.Adapter<RcViewAdapter.Holder>()
-{
+class RcViewAdapter(private val context: Context, private val memos: List<Memo>) :
+    RecyclerView.Adapter<RcViewAdapter.Holder>() {
 
     inner class Holder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
@@ -33,10 +33,12 @@ class RcViewAdapter(private val context: Context, private val memos: List<Memo>)
     override fun getItemCount(): Int {
         return memos.size
     }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_memo, parent, false)
         return Holder(view)
     }
+
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder?.bind(memos[position])
     }
