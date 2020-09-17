@@ -14,10 +14,13 @@ class RcViewAdapter(private val context: Context, private val memos: List<Memo>)
 {
 
     inner class Holder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
         val title = itemView?.findViewById<TextView>(R.id.item_title_text)
+        val time = itemView?.findViewById<TextView>(R.id.item_time)
 
         fun bind(memo: Memo) {
             title?.text = memo.title
+            time?.text = memo.time
             itemView.setOnClickListener {
                 val i = Intent(itemView.context, DetailActivity::class.java)
                 i.putExtra("title", memo.title)

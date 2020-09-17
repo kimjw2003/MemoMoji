@@ -7,6 +7,8 @@ import androidx.room.PrimaryKey
 @Entity
 class Memo(@PrimaryKey(autoGenerate = true) var id: Long?,
            @ColumnInfo(name = "title") var title:String,
-           @ColumnInfo(name = "content") var content:String) { //아이템 생성
-    constructor() : this(null, "", "")
+           @ColumnInfo(name = "content") var content:String,
+           @ColumnInfo(name = "time") var time: String
+           ) { //아이템 생성
+    constructor() : this(null, "", "", "")
 }
