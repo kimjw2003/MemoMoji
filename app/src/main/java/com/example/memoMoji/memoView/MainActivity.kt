@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                     rcView.adapter = memoAdapter
                     rcView.layoutManager = LinearLayoutManager(this)
                     rcView.setHasFixedSize(true) // 아이템이 추가될때마다 사이즈 변형 여부
-            }
+                }
             } catch (e: Exception) {  //try에서 문제가 발생하면 여기를 실행
                 Log.d("tag", "Error - $e") //try에서 문제가 발생하면 로그에 'Error - 에러난 곳'을 출력
             }
@@ -58,11 +58,12 @@ class MainActivity : AppCompatActivity() {
         thread.start()
 
         delBtn.setOnClickListener {//delete버튼을 누를시 행동
-           var intent = Intent(this, AddActivity::class.java)
+            var intent = Intent(this, AddActivity::class.java)
             startActivity(intent)
         }
 
     }
+
     override fun onDestroy() {
         MemoDb.destroyInstance()
         memoDb = null
