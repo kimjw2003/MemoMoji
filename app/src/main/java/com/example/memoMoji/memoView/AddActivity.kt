@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_add.*
 import kotlinx.android.synthetic.main.activity_add.edit_title
 
 class AddActivity : AppCompatActivity() {
-    private var memoDB : MemoDb? = null
+    private var memoDB: MemoDb? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,10 +28,9 @@ class AddActivity : AppCompatActivity() {
 
         add_text_btn.setOnClickListener {
 
-            if(edit_title.text.isNullOrBlank()){
+            if (edit_title.text.isNullOrBlank()) {
                 showDialog()
-            }
-            else {
+            } else {
                 val addThread = Thread(addRunnable)
                 addThread.start()
                 val i = Intent(this, MainActivity::class.java)
@@ -46,7 +45,7 @@ class AddActivity : AppCompatActivity() {
         super.onDestroy()
     }
 
-    private fun showDialog(){
+    private fun showDialog() {
         val alertDialog = AlertDialog.Builder(this)
             .setTitle("경고")
             .setMessage("제목이 입력되지 않았습니다!")
