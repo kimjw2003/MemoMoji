@@ -12,6 +12,7 @@ import androidx.appcompat.app.AlertDialog
 import com.example.memoMoji.R
 import com.example.memoMoji.db.MemoDb
 import kotlinx.android.synthetic.main.activity_detail.*
+import java.time.LocalDate
 
 class DetailActivity : AppCompatActivity() {
 
@@ -19,6 +20,7 @@ class DetailActivity : AppCompatActivity() {
     private var memoDb : MemoDb? = null
     private var contents : String? = null
     var title : String? = null
+    val time: LocalDate = LocalDate.now()
 
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
